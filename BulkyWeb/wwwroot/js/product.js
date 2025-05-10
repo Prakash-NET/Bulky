@@ -13,11 +13,11 @@ function loadDataTable() {
       },
     },
     columns: [
-      { data: "title", width: "22%" },
+      { data: "title", width: "25%" },
       { data: "isbn", width: "15%" },
       { data: "listPrice", width: "10%" },
-      { data: "author", width: "18%" },
-      { data: "category.name", width: "15%" },
+      { data: "author", width: "15%" },
+      { data: "category.name", width: "10%" },
       {
         data: "id",
         render: function (data) {
@@ -26,7 +26,7 @@ function loadDataTable() {
             <a href="/admin/product/delete/${data}" class="btn btn-danger mx-2"><i class="bi bi-trash-fill"></i> Delete</a>          
           </div>`;
         },
-        width: "20%",
+        width: "25%",
       },
     ],
   });
